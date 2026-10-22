@@ -2,8 +2,6 @@ import { useState } from 'react';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const EMPTY_FORM = { name: '', email: '', message: '' };
-
-
 const BACKGROUND_IMAGE = '/images/about.jpg';
 
 export default function Contact() {
