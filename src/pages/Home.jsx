@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-
-// Paste your laptop + girl illustration into public/images/ and keep this name,
-// or change the path below to match your file.
 const HERO_IMAGE = '/images/home.png';
 
 export default function Home() {
@@ -14,7 +11,6 @@ export default function Home() {
     >
       <div className="hero-text">
         <h1 className="hero-title">Hi</h1>
-        {/* Fill in your intro lines below */}
         <p className="intro-line">I'm Sandra Mariya</p>
         <p className="intro-line">a Python Developer</p>
         <p className="intro-line">Developer who turns messy problems into practical, reliable solutions. From building Python projects and AI agents to exploring new technologies, I’m driven by curiosity, clean code,
