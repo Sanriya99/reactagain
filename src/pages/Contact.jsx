@@ -3,7 +3,7 @@ import { useState } from 'react';
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const EMPTY_FORM = { name: '', email: '', message: '' };
 
-// Background image for this page: public/images/about.jpg
+
 const BACKGROUND_IMAGE = '/images/about.jpg';
 
 export default function Contact() {
