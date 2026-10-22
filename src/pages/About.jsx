@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 
-// Paste your About background into public/images/ and keep this name,
-// or change the path below to match your file.
 const ABOUT_IMAGE = '/images/about.jpg';
 
-// Add or change your projects here (link = GitHub URL for the "Click me" button)
 const projects = [
   {
     title: 'Let’s Enhance Your Roadmap',
@@ -17,6 +14,7 @@ const projects = [
     link: 'https://github.com/Sanriya99/Langchain-Agent',
   },
 ];
+
 
 const accents = ['card-blue', 'card-purple'];
 
