@@ -4,11 +4,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
 
-// Azure sets PORT; locally the API defaults to 3001
 const PORT = process.env.PORT || 3001;
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// The database lives in data/portfolio.db so you can open it in VS Code
 const rootDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 fs.mkdirSync(path.join(rootDir, 'data'), { recursive: true });
 const db = new DatabaseSync(path.join(rootDir, 'data', 'portfolio.db'));
@@ -47,7 +45,6 @@ app.post('/api/contact', (req, res) => {
   res.status(201).json({ ok: true });
 });
 
-// Serve the built React app so one server handles both pages and API (needed on Azure)
 const distDir = path.join(rootDir, 'dist');
 app.use(express.static(distDir));
 app.get(/^(?!\/api\/).*/, (_req, res) => {
